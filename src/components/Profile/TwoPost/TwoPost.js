@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Post from '../MyPosts/Post/Post'
+import s from './TwoPosts.module.css'
 
+const TwoPost = ({posts}) => {
 
-const TwoPost = () => {
+    let postElements = posts.map(item => {
+        return <Post message={item.message}/> 
+    })
+
     return (
         <div>
                 two Post
@@ -10,7 +16,8 @@ const TwoPost = () => {
                 <button>Add post</button>
                 <button> Remove Post </button>
             </div>
-            <div>
+            <div className={s.posts}>
+                {postElements}
             </div>
         </div>
     )
