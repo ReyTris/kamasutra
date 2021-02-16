@@ -1,0 +1,13 @@
+.content__img {
+    height: 300px;
+    width: 100%;
+}
+
+.double {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileDescription {
+    padding: 20px;
+}
