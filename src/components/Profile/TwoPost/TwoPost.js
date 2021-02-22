@@ -2,9 +2,9 @@ import React from 'react';
 import Post from '../MyPosts/Post/Post'
 import s from './TwoPosts.module.css'
 
-const TwoPost = ({posts}) => {
+const TwoPost = ({store}) => {
 
-    let postElements = posts.map(item => {
+    let postElements = store.getState().profilePage.posts.map(item => {
         return <Post message={item.message}/> 
     })
 

@@ -31,7 +31,9 @@ let store = {
             ],
 
             newMessageBody: ''
-        }
+        },
+        
+        sidebar: {}
     },
 
     _callSubsriber() {

@@ -1,5 +1,14 @@
- const profileReducer = (state, action) => {
-
+ 
+ 
+ let initialState = {
+    posts: [
+        {message: "Hi, how are you", id: 1},
+        {message: "It's my first post", id: 2},
+    ],
+    newPostText: "Samson"
+}
+ 
+const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'ADD-POST':
             let newPost = {
