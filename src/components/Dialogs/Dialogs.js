@@ -12,11 +12,11 @@ const Dialogs = (props) => {
 
 
     let dialogsElements = state.dialogs.map(item => {
-        return <DialogItem name={item.name} id={item.id}/>
+        return <DialogItem name={item.name} id={item.id} key={item.id}/>
     });
 
     let messagesElements = state.messages.map(item => {
-        return <Message message={item.message}/>
+        return <Message message={item.message} key={item.id}/>
     })
     // let newMessageBody = state.dialogs.newMessageBody
 
