@@ -1,10 +1,10 @@
 let initialState = {
     messages: [
         {message: "Hi", id: 1},
-        {message: "Fck you", id: 1},
-        {message: "how are you", id: 1},
-        {message: "i will learn React", id: 1},
-        {message: "how are you", id: 1},
+        {message: "Fck you", id: 2},
+        {message: "how are you", id: 3},
+        {message: "i will learn React", id: 4},
+        {message: "how are you", id: 5},
     ],
 
     dialogs: [
